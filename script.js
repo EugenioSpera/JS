@@ -68,14 +68,24 @@ if (media < 4.9){
 }     
   */ 
 
-
+let nome = prompt("Digite seu nome:");
+let sal = prompt("Digite seu salário:");
+let temp = prompt("Digite há quantos anos você trabalha na empresa:");
+let conv, salf;
+ 
+if(temp <= 3){
+    conv =  Number(sal) * 0.03;
+}
+else if (temp >= 4 && temp <= 10){
+    conv = Number(sal) * 0.125;
+}
+else{
+    conv = Number(sal) * 0.2;
+}
+    salf = Number(conv) + Number(sal);
+ 
+alert(nome + " seu salário teve um aumento de: " + conv + "R$" + " e seu novo salário é de: " + salf + " R$");
   
 
-let n1 prompt ("Nome do funcionario:");
 
-let n2 prompt ("Salario do funcionario:");
-
-let n3 prompt ("Anos de empresa do funcionario:");
-
-Reaj = (Number(n2)
 
