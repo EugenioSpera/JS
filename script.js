@@ -66,7 +66,7 @@ if (media < 4.9){
 }else{ 
     alert("Aprovado");
 }     
-  */ 
+   
 
 let nome = prompt("Digite seu nome:");
 let sal = prompt("Digite seu salário:");
@@ -76,7 +76,7 @@ let conv, salf;
 if(temp <= 3){
     conv =  Number(sal) * 0.03;
 }
-else if (temp >= 4 && temp <= 10){
+else if (temp > 3 && temp <= 10){
     conv = Number(sal) * 0.125;
 }
 else{
@@ -85,7 +85,74 @@ else{
     salf = Number(conv) + Number(sal);
  
 alert(nome + " seu salário teve um aumento de: " + conv + "R$" + " e seu novo salário é de: " + salf + " R$");
+
+
+let n1 = prompt("Digite a largura do terreno:");
+
+let n2 = prompt("Digite o comprimento do terreno:");
+
+Total = (Number(n1) * Number(n2))
+
+if (Total <= 100){
+    alert("Terreno Popular");    
+}else if
+    (Total > 100 && Total <= 500){
+    alert("Terreno Master");    
+}else{ 
+    alert("Terreno VIP");
+}     
+
   
+let temp = prompt("Digite tempo de atividade fisica:");
 
+let conv, salf;
 
+ 
+if(temp <= 10){
+    conv =  Number(temp) * 2;
+}
+else if (temp > 10 && temp <= 20){
+    conv = Number(temp) * 5;
+}
+else{
+    conv = Number(temp) * 10;
+}
+    val = Number(conv) * Number(0.05);
+ 
+    alert( " Valor a receber é: R$" + val );
 
+*/
+
+let gen = prompt("Digite o seu gênero:");
+let sal = prompt("Digite o seu salário:");
+let temp = prompt("Digite há quantos anos você trabalha na empresa:");
+let conv, salf;
+ 
+if(gen == "m")   
+    if(Number(temp) < 20) {
+    conv = Number(sal) * 0.03;
+}
+else if (temp => 20 && temp <= 30){ 
+    conv = Number(sal) * 0.13;
+}
+else{ 
+    conv = Number(sal) * 0.25; 
+}       
+
+if(gen == "f")
+    if(Number(temp) < 15){
+    conv = Number(sal) * 0.05;
+} 
+
+else if (temp => 15 && temp <= 20){
+        conv = Number(sal) * 0.12;
+}      
+ 
+else{
+    conv = Number(sal) * 0.23; 
+}       
+
+salf = Number(conv) + Number(sal);
+ 
+ 
+alert( " Seu novo salário é: R$" + salf );
